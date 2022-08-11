@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dashboard.css" />
+  </head>
+  <body>
+    <section class="dashboard">
+      <nav class="dashboard__navbar">
+        <figure>
+          <img src="../assests/images/idbi-bank-logo-2.png" alt="" />
+        </figure>
+      </nav>
+      <main class="dashboard__container">
+        <div class="dashboard__container__customerDetails--one">
+          <div class="user-details">
+            <div>
+              <label for="">CIF ID: </label
+              ><input type="text" value="4536233847" readonly />
+            </div>
+            <div>
+              <label for="">Name: </label
+              ><input type="text" value="Amit S Joshi" readonly />
+            </div>
+            <div>
+              <label for="">Status</label
+              ><input type="text" value="ACTIVE" readonly />
+            </div>
+            <div>
+              <label for="">Relationship: </label
+              ><input type="text" value="Sole" readonly />
+            </div>
+            <div>
+              <label for="">Segment: </label
+              ><input type="text" value="General Public" readonly />
+            </div>
+            <div>
+              <label for="">DOB: </label
+              ><input type="text" value="30-Jun-1988" readonly />
+            </div>
+            <div>
+              <label for="">KYC Status: </label
+              ><input type="text" value="Completed" readonly />
+            </div>
+          </div>
+          <div class="profile-picture">
+            <figure><img src="" alt="" /></figure>
+            <button type="button">Change Photo</button>
+          </div>
+        </div>
+        <div class="dashboard__container__customerDetails--two">
+          <div class="div">
+            <div class="address">
+              <div>
+                <label for="">Address: </label>
+                <input type="text" value="A-205400614" readonly />
+              </div>
+              <button type="button">Edit</button>
+            </div>
+            <div class="nominee">
+              <div>
+                <label for="">Nominee: </label>
+                <input type="text" value="Asha A Joshi" readonly />
+              </div>
+              <button type="button">Edit</button>
+            </div>
+            <div class="pancard">
+              <div>
+                <label for="">Pan Card: </label>
+                <input type="text" value="ALKJD4358H" />
+              </div>
+              <button type="button">Edit</button>
+            </div>
+            <div class="aadharcard">
+              <div>
+                <label for="">Aadhar Card: </label>
+                <input type="text" value="2149 8734 8564" />
+              </div>
+              <button type="button">Edit</button>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__container__mainBucket">
+          <header>
+            <h1 id="dashboardheading">Customer Portfolio</h1>
+            <ul>
+              <li>
+                <a href="#" id="OVERVIEW" class="navlink active">OVERVIEW</a>
+                <span>|</span>
+              </li>
+              <li>
+                <a href="#" id="CASA" class="navlink">CASA</a> <span>|</span>
+              </li>
+              <li>
+                <a href="#" id="Loans" class="navlink">Loans</a> <span>|</span>
+              </li>
+              <li>
+                <a href="#" id="Term-Deposits" class="navlink">Term Deposits</a>
+                <span>|</span>
+              </li>
+              <li>
+                <a href="#" id="Collaterals" class="navlink">Collaterals</a>
+                <span>|</span>
+              </li>
+              <li><a href="#" id="Cards" class="navlink">Cards</a></li>
+            </ul>
+          </header>
+          <main>
+            <div id="OVERVIEW" class="form">OVERVIEW</div>
+            <div id="CASA" class="form">CASA</div>
+            <div id="Loans" class="form">Loans</div>
+            <div id="Term-Deposits" class="form">term-deposits</div>
+            <div id="Collaterals" class="form">collateral</div>
+            <div id="Cards" class="form">Cards</div>
+          </main>
+          <footer>
+            <button type="button">Open CASA Account</button>
+            <button type="button">Open TD Account</button>
+            <button type="button">Open RD Account</button>
+            <button type="button">Apply for new Loan</button>
+            <button type="button">Apply for Card</button>
+          </footer>
+        </div>
+      </main>
+    </section>
+    <script src="./dashboard.js"></script>
+  </body>
+</html>

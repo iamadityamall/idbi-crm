@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: gray;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  padding: 1rem;
+}
+
+button {
+  border: none;
+  padding: 2rem;
+  color: orange;
+  border-radius: 2px;
+}
