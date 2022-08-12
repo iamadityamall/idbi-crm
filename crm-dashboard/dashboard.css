@@ -193,7 +193,8 @@ select {
 }
 
 #dashboardheading {
-  color: var(--secondary-color);
+  color: black;
+  text-decoration: underline;
 }
 
 .dashboard__container__customerDetails--one .user-details {
