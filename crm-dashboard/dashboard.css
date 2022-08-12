@@ -80,7 +80,7 @@ select {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 11vh 1fr;
+  grid-template-rows: 12vh 1fr;
   font-family: var(--font-primary);
 }
 
@@ -88,10 +88,10 @@ select {
   width: 100%;
   margin: auto;
   height: 100%;
-  background: var(--secondary-color);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  background: var(--primary-color);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
   padding: 0 5rem 0 5rem;
 }
 
@@ -103,6 +103,50 @@ select {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.dashboard__navbar .search-bar {
+  justify-self: flex-end;
+  align-self: center;
+}
+
+.dashboard__navbar .search-bar div {
+  position: relative;
+  width: 20rem;
+}
+
+.dashboard__navbar .search-bar div input {
+  width: 100%;
+  height: 100%;
+  padding: 0.65rem 0.65rem 0.65rem 0.65rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--white-shade-1);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.dashboard__navbar .search-bar div input:focus {
+  outline: var(--ternary-color) solid 2px;
+}
+.dashboard__navbar .search-bar div button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* transform: translate(-5%, 0%); */
+  border: none;
+  background: transparent;
+  font-size: 1.25rem;
+  padding: 0.35rem 0.5rem 0.25rem 0.65rem;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.dashboard__navbar .search-bar div button:hover {
+  background: var(--ternary-color);
+  transition: all 200ms ease-in-out;
 }
 
 .dashboard__container {
@@ -125,6 +169,7 @@ select {
   gap: 0 1rem;
   padding: 2rem;
   border-radius: 15px;
+  box-shadow: 0 0 8px -5px rgba(0, 0, 0, 0.4);
 }
 .dashboard__container__customerDetails--two {
   background: var(--primary-color);
@@ -133,6 +178,7 @@ select {
   align-items: flex-start;
   padding: 2rem;
   border-radius: 15px;
+  box-shadow: 0 0 8px -5px rgba(0, 0, 0, 0.4);
 }
 .dashboard__container__mainBucket {
   background: var(--primary-color);
@@ -143,7 +189,13 @@ select {
   padding: 2rem;
   border-radius: 15px;
   gap: 0.75rem 0;
+  box-shadow: 0 0 8px -5px rgba(0, 0, 0, 0.4);
 }
+
+#dashboardheading {
+  color: var(--secondary-color);
+}
+
 .dashboard__container__customerDetails--one .user-details {
   background: var(--primary-color);
   align-self: center;
@@ -185,8 +237,19 @@ select {
 .dashboard__container__customerDetails--one .profile-picture figure {
   width: 120px;
   height: 120px;
-  background: green;
+  border: 4px solid var(--ternary-color);
+  background: transparent;
   border-radius: 50%;
+  position: relative;
+}
+
+.dashboard__container__customerDetails--one .profile-picture figure i {
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 .dashboard__container__customerDetails--one .profile-picture button {
@@ -203,6 +266,7 @@ select {
 
 .dashboard__container__customerDetails--two .div {
   border-radius: 10px;
+
   overflow: hidden;
 }
 
@@ -305,6 +369,7 @@ select {
   font-weight: bold;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  color: var(--ternary-color);
 }
 .dashboard__container__mainBucket main {
   background: var(--primary-color);
@@ -315,7 +380,7 @@ select {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: yellow;
+  background: #f7ecde;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -326,7 +391,7 @@ select {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: olive;
+  background: #e9dac1;
   display: none;
   justify-content: center;
   align-items: center;
@@ -337,7 +402,7 @@ select {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: brown;
+  background: #9ed2c6;
   display: none;
   justify-content: center;
   align-items: center;
@@ -347,7 +412,7 @@ select {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: blue;
+  background: #54bab9;
   display: none;
   justify-content: center;
   align-items: center;
@@ -357,7 +422,7 @@ select {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: red;
+  background: #d9f8c4;
   display: none;
   justify-content: center;
   align-items: center;
@@ -367,7 +432,7 @@ select {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: green;
+  background: #c4d7e0;
   display: none;
   justify-content: center;
   align-items: center;

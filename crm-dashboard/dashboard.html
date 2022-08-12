@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/solid.min.css"
+    />
   </head>
   <body>
     <section class="dashboard">
@@ -13,6 +21,14 @@
         <figure>
           <img src="../assests/images/idbi-bank-logo-2.png" alt="" />
         </figure>
+        <div class="search-bar">
+          <div>
+            <input type="text" placeholder="Enter CIF"/>
+            <button type="button" onclick="alert('ehllo ankita')">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
       </nav>
       <main class="dashboard__container">
         <div class="dashboard__container__customerDetails--one">
@@ -47,7 +63,9 @@
             </div>
           </div>
           <div class="profile-picture">
-            <figure><img src="" alt="" /></figure>
+            <figure>
+              <i class="fa-solid fa-user"></i>
+            </figure>
             <button type="button">Change Photo</button>
           </div>
         </div>
