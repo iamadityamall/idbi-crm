@@ -111,7 +111,7 @@ select {
   background: var(--primary-color);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [2];
+  -ms-grid-columns: (1fr);
   grid-template-columns: repeat(2, 1fr);
   -ms-flex-line-pack: center;
   align-content: center;
