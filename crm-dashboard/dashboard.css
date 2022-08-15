@@ -463,3 +463,13 @@ select {
   border: 2px solid var(--ternary-color);
   color: var(--ternary-color);
 }
+
+@media screen and (max-width: 1920px) {
+  .dashboard__container {
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+      "a b"
+      "c b"
+      "d b";
+  }
+}
