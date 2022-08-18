@@ -202,7 +202,7 @@ select {
   -ms-grid-columns: 1fr 1rem minmax(5vw, 8vw);
   grid-template-columns: 1fr minmax(5vw, 8vw);
   gap: 0 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 15px;
   -webkit-box-shadow: 0 0 8px -5px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 8px -5px rgba(0, 0, 0, 0.4);
